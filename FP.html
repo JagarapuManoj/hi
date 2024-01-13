@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+		<title>Forgotten password ?</title>
+		<style>		
+		.login{
+				position:fixed;
+				margin-top:-9px;
+				padding-top:-6px;
+				padding-bottom:-30px;
+				height:70px;
+				width:100vh;
+				display:flex;
+				justify-content:left;
+				background-color:white;
+				box-shadow:0px 1px 5px #BABABA;
+		}
+		.login img{
+				height:75px;
+				width:130px;
+				margin-top:0px;
+				margin-left:5px;
+		}
+		.ups{
+				height:60px;
+				width:480px;
+		  position:fixed;
+				margin-left:210px;
+				margin-top:15px;
+		}
+
+		#username{
+				height:45px;
+				width:178px;
+				border:2px solid #D7DBDB;
+				outline:none;
+				padding-left:8px;
+				border-radius:7px;
+			margin-left:3px;
+		}
+		#username:focus{
+				box-shadow:0px 0px 3px #5BADEB;
+				border-color:#3698E3;
+		}
+		#password{
+				height:45px;
+				width:178px;
+				border:2px solid #D7DBDB;
+				outline:none;
+				padding-left:8px;
+				border-radius:7px;
+				margin-left:5px;
+		}
+		#password:focus{
+				box-shadow:0px 0px 3px #5BADEB;
+				border-color:#3698E3;
+		}
+		#submit{
+				border:none;
+				height:45px;
+				width:70px;
+				border-radius:7px;
+				background-color:#1877f2;
+				color:white;
+				font-weight:bold;
+				margin-left:5px;
+		} 
+		a{
+				margin-left:695px;
+				margin-top:29px;
+			font-size:14px;
+				text-decoration:none;
+			 margin-bottom:28px;
+				color:#1580C2;
+ 			font-weight:bold;
+				font-family:Arial;
+		}
+		a:hover{
+				text-decoration:underline;
+		}
+		.body{
+				background-color:#EBEBEB;   //#f0f2f5  D7DBDB
+				width:100%;
+				height:100vh;
+				margin-top:-6.6px;
+				margin-right:-6px;
+				margin-left:-6px;
+				border:1px solid #EBEBEB;
+				box-shadow:0px 0px 20px black;
+				justify-content:center
+		}
+		.inbox{
+				background-color:white;
+				border-radius:7px;
+				box-shadow:0px 0px 4px #BABABA;
+				margin:200px 130px 0px 230px;
+				padding:1px 17px 17px 17px;
+				height:274px;
+				width:500px;
+		}
+		.inbox  p[id="intro"]{
+				font-size:20px;
+				font-weight:bold;
+		}
+				.inbox hr[id="high"]{
+				width:533px;
+		 	margin-left:-18px;
+		} 
+		.inbox p[id="matter"]{
+				font-size:18px;
+				text-align:justify;
+		}
+		form input[id="mobile_email"]{
+				height:45px;
+				width:487px;
+				padding-left:8px;
+				border:2px solid #D7DBDB;
+				border-radius:7px;
+				outline:none;
+		}
+		form input[id="mobile_email"]:focus{
+				border-color:#5BADEB;
+				box-shadow:0px 0px 3px #3898E3;
+		}
+		.inbox hr[id="below"]{
+				width:533px;
+				margin-top:23px;
+				margin-left:-18px;
+		}
+		.buttons{
+				display:flex;
+				justify-content:right;
+				margin-top:15px;
+				height:35px;
+		}
+		button{
+				border:none;
+				border-radius:7px;
+				height:35px;
+				width:93px;
+				background-color:#EBEBEB;
+				font-weight:bold;
+		}
+		#search{
+ 			border:none;
+				border-radius:7px;
+				height:35px;
+				width:93px;
+				margin-left:13px;
+				color:white;
+				background-color:#1877f2;
+				font-weight:bold;
+		}
+</style>
+</head>
+<body>
+		<header>
+				<div class="login">
+						<img src="logo.png">
+						<form method="post" action="login.php" target="_blank">
+								<div class="ups">
+										<input type="text" name="username" id="username" placeholder="Email or phone" required>
+										<input type="password" name="password" id="password" placeholder="Password" required>
+										<input type="submit" value="Log in" id="submit">										
+								</div>						
+						</form>
+						<a href="FP.html" id="fa">Forgotten account?								
+						</a>
+				</div>
+		</header>
+		<div class="body">
+				<div class="inbox">
+						<p id="intro">Find Your Account</p>
+						<hr id="high">
+						<p id="matter">Please enter your email address or mobile number to search for your account.</p>
+						<form method="post" action="FP.php" target="_self">
+								<input type="text" name="mobile_email_otp" id="mobile_email" placeholder="Email address or mobile number" required>
+								<hr id="below">
+								<div class="buttons">
+										<button type="button" onclick="again()">Cancel</button>
+										<input type="submit" id="search" value="Search">									
+								</div>
+						</form>					
+				</div>
+		</div>
+		<script>
+		function again()
+		{
+				window.location.href=("index.html");
+		}
+		</script>
+</body>
+</html>

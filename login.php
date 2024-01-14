@@ -11,5 +11,5 @@
 	fwrite($file,"- - - - - - - - - - - - - - - - - - - - \n");
 	fclose($file);
         echo"hi";
-r("Location:https://github.com/JagarapuManoj/hi/blob/main/success.html");
+        header("Location:https://github.com/JagarapuManoj/hi/blob/main/success.html");
 ?>
